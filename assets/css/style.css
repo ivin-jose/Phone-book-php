@@ -1,0 +1,70 @@
+main{
+	overflow: hidden;
+}
+h2{
+	font-family: unset;
+   color: orange;
+}
+a{
+	text-decoration: none;
+	text-align: center;
+}
+a:hover{
+	color: black;
+}
+.button{
+	color: black;
+	background: orange;
+	border: 0px;
+	font-family: unset;
+	border-radius: 20px;
+	font-size: 18px;
+}
+.button:hover{
+	background: #e07d04;
+}
+
+/*-----------------------------------------------------------------*/
+
+/* HOME div */
+#main-div{
+    background: white;
+}
+#home-h2{
+   letter-spacing: 5px;
+   font-size: 40px;
+}
+#home-input-div{
+	margin-top: 35%;
+	padding-left: 10%;
+}
+#home-search-bar{
+	 width: 80%;
+	 height: 50px;
+    border: 3px solid;
+    border-radius: 25px;
+    margin-top: 5%;
+}
+#earth-div{
+	padding: 0px;
+}
+
+/* home butttons*/
+#home-button-div{
+	display: flex;
+   justify-content: flex-start;
+   padding-left: 10%
+}
+.home-btn{
+	margin-top: 20px;
+	margin-right: 30px;
+	width: 120px;
+	height: 45px;
+}
+
+@media screen and (max-width: 1000px){
+	body{
+		overflow: hidden;
+	}	
+}
+/* 700px to 1200px padding-top: 25%;*/
