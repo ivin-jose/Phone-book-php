@@ -1,7 +1,7 @@
 main{
 	overflow: hidden;
 }
-h2{
+h2, h1, h3, h4, h5, h6{
 	font-family: unset;
    color: orange;
 }
@@ -63,8 +63,35 @@ a:hover{
 }
 
 @media screen and (max-width: 1000px){
-	body{
+	#body{
 		overflow: hidden;
 	}	
 }
 /* 700px to 1200px padding-top: 25%;*/
+
+#inner-first-div{
+	width: 23%;
+}
+#inner-middle-div{
+	width: 50%;
+}
+#inner-third-div{
+	width: 27%;
+   background: red;
+}
+#name-display-div{
+	 font-size: 20px;
+    padding-top: 30%;
+    text-align: center;
+}
+#inner-search-div{
+	 text-align: center;
+    padding-bottom: 10%;
+}
+#inner-search-bar{
+	 width: 100%;
+	 height: 50px;
+    border: 3px solid;
+    border-radius: 25px;
+    margin-top: 5%;
+}

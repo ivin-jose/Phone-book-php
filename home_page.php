@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	 <!-- Bootstrap 5 -->
+	<!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     
@@ -30,10 +30,10 @@
 					
 					<div id="home-input-div">
 						<h2 id="home-h2">PHONE BOOK</h2>
-						<input id="home-search-bar" type="search" class="form-control" placeholder="SEARCH NAME....">
+						<input id="home-search-bar" type="search" class="form-control" placeholder="SEARCH NAME.......">
 					</div>
 					<div id="home-button-div">
-						<a class="button btn-outline-primary home-btn" href="./phone_book.php">Show more</a>
+						<a class="button btn-outline-primary home-btn" href="./inner_page.php">Show more</a>
 						<a class="button btn-outline-primary home-btn">Search</a>
 					</div>
 				</div>
