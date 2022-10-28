@@ -165,8 +165,17 @@ a:hover{
 /* FORM - user data inserting form*/
 
 #save_form{
-	    padding-right: 50px;
+	padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    display: none;
+}
+#update_form{
+	padding-right: 50px;
     padding-left: 50px;
     text-align: center;
 }
+
+/* FORM - user data update form */
+
 

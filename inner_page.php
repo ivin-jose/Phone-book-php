@@ -97,6 +97,18 @@
 									<input type="email" name="" id="email" class="form-control input-box" placeholder="Email" required>
 									<input type="submit" name="" value="Save" class="button form-button btn-outline-primary home-btn" id="save_btn">
 								</div>
+								<div id="update_form" class="boxshadow">
+									<h3>Update</h3>
+									<label id="name_label" class="label"></label>
+									<input type="text" name="" id="name" class="form-control input-box" placeholder="Name" required>
+									<label id="home_label" class="label"></label>
+									<input type="text" name="" id="home" class="form-control input-box" placeholder="Home town" required>
+									<label id="phone_label" class="label"></label>
+									<input type="text" name="" id="phone" class="form-control input-box" placeholder="Phone" required>
+									<label id="email_label" class="label"></label>
+									<input type="email" name="" id="email" class="form-control input-box" placeholder="Email" required>
+									<input type="submit" name="" value="Update" class="button form-button btn-outline-primary home-btn" id="update_btn">
+								</div>
 							</div>
 						</div>
 
