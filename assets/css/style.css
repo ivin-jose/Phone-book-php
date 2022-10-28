@@ -26,6 +26,25 @@ a:hover{
 .button:hover{
 	background: #e07d04;
 }
+.form-button{
+	    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.boxshadow{
+	box-shadow: 0px 0px 14px 1px #9d978d;
+	border-radius: 10px
+}
+.input-box{
+	    height: 5vh;
+	    box-shadow: 0px 0px 0px 0px orange;
+}
+
+.label{
+	font-size: 12px;
+    color: red;
+}
 
 /*-----------------------------------------------------------------*/
 
@@ -116,7 +135,6 @@ a:hover{
 #all-data-div{
 	display: flex;
 	justify-content: center;
-	/*display: none;*/
 }
 #user-details-heading-div{
 	display: flex;
@@ -124,10 +142,9 @@ a:hover{
 	align-items: center;
 }
 #user-details-div{
+	display: none;
 	background: white;
 	width: 50%;
-	box-shadow: 0px 0px 14px 1px #9d978d;
-	border-radius: 10px
 }
 #user-details-logo-div{
 	padding-top: 10px;
@@ -144,3 +161,12 @@ a:hover{
     object-fit: contain;
     height: 15vh;
 }
+
+/* FORM - user data inserting form*/
+
+#save_form{
+	    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+}
+
