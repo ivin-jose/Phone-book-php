@@ -27,6 +27,9 @@
 
 		<div class="row">
 			<div class="col-md-4" id="inner-first-div">
+				<div id="phone-logo-div">
+					<img src="./assets/images/iphone-notch.svg">
+				</div>
 				<div id="name-display-div">
 					<p>ivin jose 1</p>
 					<p>name 2</p>
@@ -60,22 +63,27 @@
 				<!-- END search bar div -->
 
 				<div id="all-data-div">
+
+					 <!-- ------- All details displaying div ------ -->
+
 					<div id="user-details-div">
-						
-						<h1>NAME INITAL</h1>
-						<dl>
-							<dt><h5>Proffesion</h5></dt>
-						    <dd>Student</dd>
-						</dl>
-						<
-							<h5>Home:</h5>calicut
-						
-						<dl>
-							<dt><h5>Contact</h5></dt>
-						    <dd>2345677665</dd>
-						    <dd>email@.com</dd>
-						</dl>
+					     <div id="user-details-heading-div">
+					     	<div id="user-details-logo-div">
+					     		<i id="open-book-logo" class="fa-solid fa-book-open-reader"></i>
+					     		<h2>NAME LASTNAME</h2>
+					     	</div>
+					     	<div id="user-details-display-div">
+					     		<b>proffesion:</b> Student<br>
+					     		<b>Home:</b> place<br>
+					     		<b>Phone:</b> 1234567899<br>
+					     		<b>email:</b> something@gmail.com
+					     	</div>
+					     </div>	
+					     <div id="user-details-image-div">
+					     	<img id="user-details-image" src="./assets/images/orange.png">
+					     </div>		
 					</div>
+
 				</div>
 
 			</div>
