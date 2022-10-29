@@ -1,12 +1,39 @@
-$('.toast').toast('show');
- $(document).ready(function() {
-        $(".toast").toast('show');
-    });
 
+function save_data() {
+	var name = $('#name').val();
+	var home = $('#home').val();
+	var phone = $('#phone').val();
+	var email = $('#email').val();
 
+	$.ajax({
+		type: 'POST',
+		url: './save_data.php',
+		data: {name: name, home: home, phone: phone, email: email},
+		success: function(response) {
+			$("#toast-div").html(response);
+		}
+	})      
+}
 
+// forms hiding and showing in button clicks
 
+$("#add_user_btn").click(function(){
+	$("#save_form").show();
+	$("#update_form").hide();
+});
+$("#update_user_btn").click(function(){
+	$("#update_form").show();
+	$("#save_form").hide();
 
+});
+$("#delete_user_btn").click(function(){
+	$("#save_form").hide();
+	$("#update_form").hide();
+});
+$("#inner_home_btn").click(function(){
+	$("#save_form").hide();
+	$("#update_form").hide();
+});
 
 
 // saving data
@@ -18,9 +45,10 @@ $("#save_btn").click(function(){
 	$("#save_form").hide();
 
 	var name = $('#name').val();
+	var home = $('#home').val();
 	var phone = $('#phone').val();
 	var email = $('#email').val();
-	var home = $('#home').val();
+	
 
 	var ph = phone.length; 
 
@@ -41,7 +69,8 @@ $("#save_btn").click(function(){
 				if(email.length > 0){
 					$("#email_label").html("");
 					$("#email").css({"border": "1px solid #ced4da"});
-                    // ajax  code function() here 
+                    
+                    save_data();
 
 				}
 				else{

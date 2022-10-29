@@ -101,13 +101,13 @@
 								<div id="update_form" class="boxshadow">
 									<h3>Update</h3>
 									<label id="name_label" class="label"></label>
-									<input type="text" name="" id="name" class="form-control input-box" placeholder="Name" required>
+									<input type="text" name="" id="update_name" class="form-control input-box" placeholder="Name" required>
 									<label id="home_label" class="label"></label>
-									<input type="text" name="" id="home" class="form-control input-box" placeholder="Home town" required>
+									<input type="text" name="" id="update_home" class="form-control input-box" placeholder="Home town" required>
 									<label id="phone_label" class="label"></label>
-									<input type="text" name="" id="phone" class="form-control input-box" placeholder="Phone" required>
+									<input type="text" name="" id="update_phone" class="form-control input-box" placeholder="Phone" required>
 									<label id="email_label" class="label"></label>
-									<input type="email" name="" id="email" class="form-control input-box" placeholder="Email" required>
+									<input type="email" name="" id="update_email" class="form-control input-box" placeholder="Email" required>
 									<input type="submit" name="" value="Update" class="button form-button btn-outline-primary home-btn" id="update_btn">
 								</div>
 
@@ -138,32 +138,21 @@
 
 				<div class="col-md-4" id="inner-third-div">
 					<div>
-						<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_btn"><i class="fa-solid fa-user-plus disable_btn"></i></button>
+						<button class="button form-button btn-outline-primary home-btn third-btns" id="add_user_btn"><i class="fa-solid fa-user-plus disable_btn"></i></button>
 					</div>
 					<div>
-						<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_btn"><i class="fa-regular fa-pen-to-square disable_btn"></i></button>
+						<button class="button form-button btn-outline-primary home-btn third-btns" id="update_user_btn"><i class="fa-regular fa-pen-to-square disable_btn"></i></button>
 					</div>
 					<div>
-						<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_btn"><i class="fa-solid fa-trash disable_btn"></i></button>
+						<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_user_btn"><i class="fa-solid fa-trash disable_btn"></i></button>
 					</div>
 					<div>
-						<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_btn"><i class="fa-regular fa-pen-to-square disable_btn"></i></button>
+						<button class="button form-button btn-outline-primary home-btn third-btns" id="inner_home_btn"><i class="fa-regular fa-pen-to-square disable_btn"></i></button>
 					</div>
 
 					<div id="toast-div">
-						<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-							<div class="toast-header">
-								<i class="fa-solid fa-user-plus disable_btn toast-logo"></i> 
-								<strong class="me-auto toast-add"> User Added</strong>
-								<small>11 mins ago</small>
-								<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-							</div>
-							<div class="toast-body">
-								New user 'ivin jose' added!
-							</div>
-						</div>
 
-						<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+					<!-- 	<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 							<div class="toast-header">
 								<i class="fa-solid fa-trash disable_btn toast-logo"></i>
 								<strong class="me-auto toast-delete">User Deleted</strong>
@@ -173,7 +162,7 @@
 							<div class="toast-body">
 								'ivin jose' Deleted
 							</div>
-						</div>
+						</div> -->
 					</div>
 
 					
