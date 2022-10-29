@@ -38,7 +38,7 @@ $("#save_btn").click(function(){
 				if(email.length > 0){
 					$("#email_label").html("");
 					$("#email").css({"border": "1px solid #ced4da"});
-
+                    // ajax  code function() here 
 
 				}
 				else{
@@ -65,6 +65,18 @@ $("#save_btn").click(function(){
 		$("#name").css({"border":"solid red"});
 		$("#save_form").show();
 	}
+})
+
+$("#delete_btn").click(function(){
+	$("#delete_confarmation_form").show()
+})
+$("#yes-button").click(function(){
+	alert("deleted")
+	$("#delete_confarmation_form").hide()
+})
+$("#no-button").click(function(){
+	alert("cancelled")
+	$("#delete_confarmation_form").hide()
 })
 
 	// $.ajax({

@@ -109,6 +109,21 @@
 									<input type="email" name="" id="email" class="form-control input-box" placeholder="Email" required>
 									<input type="submit" name="" value="Update" class="button form-button btn-outline-primary home-btn" id="update_btn">
 								</div>
+								<div id="delete_confarmation_form" class="boxshadow">
+									<div id="delete-confarmation-text-div">
+										Are you sure to Delete..?
+									</div>
+									<div id="delete-confarmation-button-div">
+										<div>
+											<input type="submit" name="" value="Yes" class="button form-button btn-outline-primary home-btn" id="yes-button">
+										</div>
+										<div>
+											<input type="submit" name="" value="No" class="button form-button btn-outline-primary home-btn" id="no-button">
+										</div>
+										
+										
+									</div>
+								</div>
 							</div>
 						</div>
 
@@ -120,7 +135,7 @@
 
 				<div class="col-md-4" id="inner-third-div">
 					<div>
-						buttons
+						<input type="submit" name="" value="Delete" class="button form-button btn-outline-primary home-btn" id="delete_btn">
 					</div>
 				</div>
 			</div>

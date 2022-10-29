@@ -27,23 +27,23 @@ a:hover{
 	background: #e07d04;
 }
 .form-button{
-	    height: 35px;
-    width: 100px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+	height: 35px;
+	width: 100px;
+	border-radius: 10px;
+	margin-bottom: 10px;
 }
 .boxshadow{
 	box-shadow: 0px 0px 14px 1px #9d978d;
 	border-radius: 10px
 }
 .input-box{
-	    height: 5vh;
-	    box-shadow: 0px 0px 0px 0px orange;
+	height: 5vh;
+	box-shadow: 0px 0px 0px 0px orange;
 }
 
 .label{
 	font-size: 12px;
-    color: red;
+	color: red;
 }
 
 /*-----------------------------------------------------------------*/
@@ -104,7 +104,7 @@ a:hover{
 #inner-third-div{
 	width: 27%;
 	background: red;
-	display: none;
+	/*display: none;*/
 }
 #phone-logo-div{
 	margin-top: 40%;
@@ -158,24 +158,46 @@ a:hover{
 }
 #user-details-image{
 	width: 100%;
-    object-fit: contain;
-    height: 15vh;
+	object-fit: contain;
+	height: 15vh;
 }
 
 /* FORM - user data inserting form*/
 
 #save_form{
 	padding-right: 50px;
-    padding-left: 50px;
-    text-align: center;
-    display: none;
-}
-#update_form{
-	padding-right: 50px;
-    padding-left: 50px;
-    text-align: center;
+	padding-left: 50px;
+	text-align: center;
+	display: none;
 }
 
 /* FORM - user data update form */
+
+#update_form{
+	padding-right: 50px;
+	padding-left: 50px;
+	text-align: center;
+	display: none;
+}
+
+/* FORM delete confirmation form */
+
+#delete_confarmation_form{
+	text-align: center;
+	display: none;
+}
+#delete-confarmation-button-div{
+	display: flex;
+	padding-left: 25px;
+}
+#yes-button{
+	background: wheat;
+}
+#delete-confarmation-text-div{
+	font-size: 20px;
+	font-family: inherit;
+	color: #b70000;
+	padding-top: 15px
+}
 
 
