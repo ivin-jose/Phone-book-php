@@ -1,3 +1,30 @@
+// Disabling update button
+document.querySelector('#update_user_btn').disabled = true;
+document.querySelector('#delete_user_btn').disabled = true;
+
+function names_printing() {
+	$.ajax({
+		type: 'POST',
+		url: './names_print.php',
+		data: {},
+		success: function(response) {
+			$("#name-display-div").html(response);
+		}
+	})
+}
+
+
+function all_data_printing() {
+	$.ajax({
+		type: 'POST',
+		url: './all_data_print.php',
+		data: {user_id: user_id},
+		success: function(response) {
+			$("#complete_data").html(response);
+		}
+	})
+}
+
 
 function save_data() {
 	var name = $('#name').val();
@@ -11,30 +38,26 @@ function save_data() {
 		data: {name: name, home: home, phone: phone, email: email},
 		success: function(response) {
 			$("#toast-div").html(response);
+			names_printing(); 
 		}
 	})      
 }
 
-// forms hiding and showing in button clicks
+names_printing();
 
-$("#add_user_btn").click(function(){
-	$("#save_form").show();
-	$("#update_form").hide();
-});
-$("#update_user_btn").click(function(){
-	$("#update_form").show();
-	$("#save_form").hide();
+// full detail of user 
 
-});
-$("#delete_user_btn").click(function(){
+$("#name-display-div").on('click','.display_name', (e)=>{
+	document.querySelector('#update_user_btn').disabled = false;
+	document.querySelector('#delete_user_btn').disabled = false;
+	$("#complete_data").show();
 	$("#save_form").hide();
 	$("#update_form").hide();
-});
-$("#inner_home_btn").click(function(){
-	$("#save_form").hide();
-	$("#update_form").hide();
-});
+	$("#delete_confirmation_form").hide();
+	user_id = e.target.getAttribute("u_id");
+	all_data_printing();
 
+})
 
 // saving data
 
@@ -69,8 +92,8 @@ $("#save_btn").click(function(){
 				if(email.length > 0){
 					$("#email_label").html("");
 					$("#email").css({"border": "1px solid #ced4da"});
-                    
-                    save_data();
+					
+					save_data();
 
 				}
 				else{
@@ -99,24 +122,43 @@ $("#save_btn").click(function(){
 	}
 })
 
-$("#delete_btn").click(function(){
-	$("#delete_confarmation_form").show()
-})
+// forms hiding and showing in button clicks
+
+$("#add_user_btn").click(function(){
+	$("#save_form").show();
+	$("#update_form").hide();
+	$("#complete_data").hide();
+});
+$("#update_user_btn").click(function(){
+	$("#update_form").show();
+	$("#save_form").hide();
+	$("#complete_data").hide();
+
+});
+$("#delete_user_btn").click(function(){
+	document.querySelector('#update_user_btn').disabled = true;
+	document.querySelector('#add_user_btn').disabled = true;
+	document.querySelector('.display_name').disabled = true;
+	$("#delete_confirmation_form").show();
+	$("#save_form").hide();
+	$("#update_form").hide();
+	$("#complete_data").hide();
+
+});
+$("#inner_home_btn").click(function(){
+	$("#save_form").hide();
+	$("#update_form").hide();
+	$("#complete_data").hide();
+});
 $("#yes-button").click(function(){
-	alert("deleted")
-	$("#delete_confarmation_form").hide()
+	$("#delete_confirmation_form").hide();
+	document.querySelector('#update_user_btn').disabled = false;
+	document.querySelector('#add_user_btn').disabled = false;
+	document.querySelector('.display_name').disabled = false;
 })
 $("#no-button").click(function(){
-	alert("cancelled")
-	$("#delete_confarmation_form").hide()
+	$("#delete_confirmation_form").hide();
+	document.querySelector('#update_user_btn').disabled = false;
+	document.querySelector('#add_user_btn').disabled = false;
+	document.querySelector('.display_name').disabled = false;
 })
-
-	// $.ajax({
-	// 				type: 'POST',
-	// 				url: './save_data.php',
-	// 				data: {name:$('#name').val(), phone:$('#phone').val(), email:$('#email').val()},
-	// 				success: function(response) {
-	// 					list_contacts();
-	// 					alert("User Added !");
-	// 				}
-	// 			});

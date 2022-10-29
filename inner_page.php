@@ -31,15 +31,7 @@
 						<img src="./assets/images/iphone-notch.svg">
 					</div>
 					<div id="name-display-div">
-						<p>ivin jose 1</p>
-						<p>name 2</p>
-						<p>name 3</p>
-						<p>name 4</p>
-						<p>name 5</p>
-						<p>name 6</p>
-						<p>name 7</p>
-						<p>name 8</p>
-						<p>name 9</p>
+						
 					</div>
 				</div>
 
@@ -66,22 +58,8 @@
 
 						<!-- ------- All details displaying div ------ -->
 
-						<div id="user-details-div" class="boxshadow">
-							<div id="user-details-heading-div">
-								<div id="user-details-logo-div">
-									<i id="open-book-logo" class="fa-solid fa-book-open-reader"></i>
-									<h2>NAME LASTNAME</h2>
-								</div>
-								<div id="user-details-display-div">
-									<b>proffesion:</b> Student<br>
-									<b>Home:</b> place<br>
-									<b>Phone:</b> 1234567899<br>
-									<b>email:</b> something@gmail.com
-								</div>
-							</div>	
-							<div id="user-details-image-div">
-								<img id="user-details-image" src="./assets/images/orange.png">
-							</div>		
+						<div id="complete_data">
+							
 						</div>
 						<div>
 							<div>
