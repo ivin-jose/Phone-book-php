@@ -97,14 +97,11 @@ a:hover{
 
 #inner-first-div{
 	width: 23%;
+	overflow-y: scroll;
+	height: 100vh;
 }
 #inner-middle-div{
 	width: 50%;
-}
-#inner-third-div{
-	width: 27%;
-	background: red;
-	/*display: none;*/
 }
 #phone-logo-div{
 	margin-top: 40%;
@@ -121,6 +118,14 @@ a:hover{
 #inner-search-div{
 	text-align: center;
 	padding-bottom: 10%;
+	display: flex;
+}
+#inner-searchbar-div{
+	width: 100%;
+}
+#inner-search-btn-div{
+	padding-top: 1%;
+	margin-left: -45px;
 }
 #inner-search-bar{
 	width: 80%;
@@ -182,22 +187,64 @@ a:hover{
 
 /* FORM delete confirmation form */
 
-#delete_confarmation_form{
+#delete_confirmation_form{
 	text-align: center;
 	display: none;
 }
-#delete-confarmation-button-div{
+#delete-confirmation-button-div{
 	display: flex;
 	padding-left: 25px;
 }
 #yes-button{
 	background: wheat;
 }
-#delete-confarmation-text-div{
+#delete-confirmation-text-div{
 	font-size: 20px;
 	font-family: inherit;
 	color: #b70000;
 	padding-top: 15px
+}
+
+/* Inner thrid  buttons div */
+
+#inner-third-div{
+	width: 27%;
+	background: white;
+	padding-top: 10px;
+    display: flex;
+}
+.third-btns{
+	background: #e1dada;
+	width: 150%;
+
+}
+
+/*bootsrap toast*/
+
+#toast-div{
+	position: absolute;
+	top: 25%;
+    width: 22%;
+}
+.toast{
+	margin-bottom: 10px;
+}
+
+.toast:not(.show){
+	display: block;
+}
+.toast-header{
+	background: #fee0ab;
+}
+
+.toast-logo{
+	margin-right: 10px;
+}
+.toast-add{
+	color: green;
+}
+.toast-delete{
+	color: red;
 }
 
 

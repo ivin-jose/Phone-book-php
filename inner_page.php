@@ -124,7 +124,7 @@
 										</div>		
 									</div>
 								</div>
-								
+
 							</div>
 						</div>
 
@@ -134,11 +134,54 @@
 
 				<!-- ======= END middle div ========= -->
 
+				<!-- ======= Third buttons div ========= -->
+
 				<div class="col-md-4" id="inner-third-div">
 					<div>
-						<input type="submit" name="" value="Delete" class="button form-button btn-outline-primary home-btn" id="delete_btn">
+						<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_btn"><i class="fa-solid fa-user-plus disable_btn"></i></button>
 					</div>
+					<div>
+						<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_btn"><i class="fa-regular fa-pen-to-square disable_btn"></i></button>
+					</div>
+					<div>
+						<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_btn"><i class="fa-solid fa-trash disable_btn"></i></button>
+					</div>
+					<div>
+						<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_btn"><i class="fa-regular fa-pen-to-square disable_btn"></i></button>
+					</div>
+
+					<div id="toast-div">
+						<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+							<div class="toast-header">
+								<i class="fa-solid fa-user-plus disable_btn toast-logo"></i> 
+								<strong class="me-auto toast-add"> User Added</strong>
+								<small>11 mins ago</small>
+								<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+							</div>
+							<div class="toast-body">
+								New user 'ivin jose' added!
+							</div>
+						</div>
+
+						<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+							<div class="toast-header">
+								<i class="fa-solid fa-trash disable_btn toast-logo"></i>
+								<strong class="me-auto toast-delete">User Deleted</strong>
+								<small>11 mins ago</small>
+								<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+							</div>
+							<div class="toast-body">
+								'ivin jose' Deleted
+							</div>
+						</div>
+					</div>
+
+					
+					
 				</div>
+
+				
+
 			</div>
 
 		</div>
