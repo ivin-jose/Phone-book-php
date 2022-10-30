@@ -35,126 +35,126 @@
 					</div>
 				</div>
 
-				<!-- ========== END name displaying  div ============ -->
+					<!-- ========== END name displaying  div ============ -->
 
-				<!-- ========== inner middle  div ============ -->
+					<!-- ========== inner middle  div ============ -->
 
-				<div class="col-md-4" id="inner-middle-div">
+					<div class="col-md-4" id="inner-middle-div">
 
-					<!-- search bar div -->
+						<!-- search bar div -->
 
-					<div id="inner-search-div">
-						<div id="inner-searchbar-div">
-							<input type="search" name="" id="inner-search-bar" placeholder="SEARCH NAME.........">
+						<div id="inner-search-div">
+							<div id="inner-searchbar-div">
+								<input type="search" name="" id="inner-search-bar" placeholder="SEARCH NAME.........">
+							</div>
+							<div id="inner-search-btn-div">
+								<button id="inner-search-btn" class="button btn-outline-primary home-btn">Search</button>
+							</div>
 						</div>
-						<div id="inner-search-btn-div">
-							<button id="inner-search-btn" class="button btn-outline-primary home-btn">Search</button>
+
+						<!-- END search bar div -->
+
+						<div id="all-data-div">
+
+							<!-- ------- All details displaying div ------ -->
+
+							<div id="complete_data">
+
+							</div>
+							<div>
+								<div>
+									<div id="save_form" class="boxshadow">
+										<h3>Register</h3>
+										<label id="name_label" class="label"></label>
+										<input type="text" name="" id="name" class="form-control input-box" placeholder="Name" required>
+										<label id="home_label" class="label"></label>
+										<input type="text" name="" id="home" class="form-control input-box" placeholder="Home town" required>
+										<label id="phone_label" class="label"></label>
+										<input type="text" name="" id="phone" class="form-control input-box" placeholder="Phone" required>
+										<label id="email_label" class="label"></label>
+										<input type="email" name="" id="email" class="form-control input-box" placeholder="Email" required>
+										<input type="submit" name="" value="Save" class="button form-button btn-outline-primary home-btn" id="save_btn">
+									</div>
+
+									<div id="update_form" class="boxshadow">
+										<h3>Update</h3>
+										<label id="name_label" class="label"></label>
+										<input type="text" name="" id="update_name" class="form-control input-box" placeholder="Name" required>
+										<label id="home_label" class="label"></label>
+										<input type="text" name="" id="update_home" class="form-control input-box" placeholder="Home town" required>
+										<label id="phone_label" class="label"></label>
+										<input type="text" name="" id="update_phone" class="form-control input-box" placeholder="Phone" required>
+										<label id="email_label" class="label"></label>
+										<input type="email" name="" id="update_email" class="form-control input-box" placeholder="Email" required>
+										<input type="submit" name="" value="Update" class="button form-button btn-outline-primary home-btn" id="update_btn">
+									</div>
+
+									<div id="delete_confirmation_form" class="boxshadow">
+										<div id="delete-confirmation-text-div">
+											Are you sure to Delete..?
+										</div>
+										<div id="delete-confirmation-button-div">
+											<div>
+												<input type="submit" name="" value="Yes" class="button form-button btn-outline-primary home-btn" id="yes-button">
+											</div>
+											<div>
+												<input type="submit" name="" value="No" class="button form-button btn-outline-primary home-btn" id="no-button">
+											</div>		
+										</div>
+									</div>
+
+								</div>
+							</div>
+
 						</div>
+
 					</div>
 
-					<!-- END search bar div -->
+					<!-- ======= END middle div ========= -->
 
-					<div id="all-data-div">
+					<!-- ======= Third buttons div ========= -->
 
-						<!-- ------- All details displaying div ------ -->
-
-						<div id="complete_data">
-							
+					<div class="col-md-4" id="inner-third-div">
+						<div>
+							<button class="button form-button btn-outline-primary home-btn third-btns" id="add_user_btn"><i class="fa-solid fa-user-plus disable_btn"></i></button>
 						</div>
 						<div>
-							<div>
-								<div id="save_form" class="boxshadow">
-									<h3>Register</h3>
-									<label id="name_label" class="label"></label>
-									<input type="text" name="" id="name" class="form-control input-box" placeholder="Name" required>
-									<label id="home_label" class="label"></label>
-									<input type="text" name="" id="home" class="form-control input-box" placeholder="Home town" required>
-									<label id="phone_label" class="label"></label>
-									<input type="text" name="" id="phone" class="form-control input-box" placeholder="Phone" required>
-									<label id="email_label" class="label"></label>
-									<input type="email" name="" id="email" class="form-control input-box" placeholder="Email" required>
-									<input type="submit" name="" value="Save" class="button form-button btn-outline-primary home-btn" id="save_btn">
-								</div>
+							<button class="button form-button btn-outline-primary home-btn third-btns" id="update_user_btn"><i class="fa-regular fa-pen-to-square disable_btn"></i></button>
+						</div>
+						<div>
+							<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_user_btn"><i class="fa-solid fa-trash disable_btn"></i></button>
+						</div>
+						<div>
+							<button class="button form-button btn-outline-primary home-btn third-btns" id="inner_home_btn"><i class="fa-regular fa-pen-to-square disable_btn"></i></button>
+						</div>
 
-								<div id="update_form" class="boxshadow">
-									<h3>Update</h3>
-									<label id="name_label" class="label"></label>
-									<input type="text" name="" id="update_name" class="form-control input-box" placeholder="Name" required>
-									<label id="home_label" class="label"></label>
-									<input type="text" name="" id="update_home" class="form-control input-box" placeholder="Home town" required>
-									<label id="phone_label" class="label"></label>
-									<input type="text" name="" id="update_phone" class="form-control input-box" placeholder="Phone" required>
-									<label id="email_label" class="label"></label>
-									<input type="email" name="" id="update_email" class="form-control input-box" placeholder="Email" required>
-									<input type="submit" name="" value="Update" class="button form-button btn-outline-primary home-btn" id="update_btn">
-								</div>
+						<div id="toast-div">
 
-								<div id="delete_confirmation_form" class="boxshadow">
-									<div id="delete-confirmation-text-div">
-										Are you sure to Delete..?
-									</div>
-									<div id="delete-confirmation-button-div">
-										<div>
-											<input type="submit" name="" value="Yes" class="button form-button btn-outline-primary home-btn" id="yes-button">
-										</div>
-										<div>
-											<input type="submit" name="" value="No" class="button form-button btn-outline-primary home-btn" id="no-button">
-										</div>		
-									</div>
+							<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+								<div class="toast-header">
+									<i class="fa-solid fa-trash disable_btn toast-logo"></i>
+									<strong class="me-auto toast-delete">User Deleted</strong>
+									<small>11 mins ago</small>
+									<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
 								</div>
-
+								<div class="toast-body">
+									<i class="fa-regular fa-user"></i>
+								</div>
 							</div>
 						</div>
 
+
+
 					</div>
+
+
 
 				</div>
-
-				<!-- ======= END middle div ========= -->
-
-				<!-- ======= Third buttons div ========= -->
-
-				<div class="col-md-4" id="inner-third-div">
-					<div>
-						<button class="button form-button btn-outline-primary home-btn third-btns" id="add_user_btn"><i class="fa-solid fa-user-plus disable_btn"></i></button>
-					</div>
-					<div>
-						<button class="button form-button btn-outline-primary home-btn third-btns" id="update_user_btn"><i class="fa-regular fa-pen-to-square disable_btn"></i></button>
-					</div>
-					<div>
-						<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_user_btn"><i class="fa-solid fa-trash disable_btn"></i></button>
-					</div>
-					<div>
-						<button class="button form-button btn-outline-primary home-btn third-btns" id="inner_home_btn"><i class="fa-regular fa-pen-to-square disable_btn"></i></button>
-					</div>
-
-					<div id="toast-div">
-
-						<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-							<div class="toast-header">
-								<i class="fa-solid fa-trash disable_btn toast-logo"></i>
-								<strong class="me-auto toast-delete">User Deleted</strong>
-								<small>11 mins ago</small>
-								<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-							</div>
-							<div class="toast-body">
-								'ivin jose' Deleted
-							</div>
-						</div>
-					</div>
-
-					
-					
-				</div>
-
-				
 
 			</div>
 
-		</div>
+		</main>
+	</body>
+	</html>
 
-	</main>
-</body>
-</html>
-
-<script type="text/javascript" src="./assets/js/main.js"></script>
+	<script type="text/javascript" src="./assets/js/main.js"></script>

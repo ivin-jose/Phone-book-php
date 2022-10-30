@@ -15,7 +15,10 @@
   // output data of each row
   while($row = $result->fetch_assoc()) {
 
-  $datas .= '<p class = "display_name" u_id = "'.$row["user_id"].'"> '. $row["user_name"]. '</p>';
+  $datas .= '<div id="names-div">
+              <div><i class="fa-regular fa-user"></i></div>
+              <div><p class = "display_name" u_id = "'.$row["user_id"].'"> '.$row["user_name"].' </p></div>
+            </div>';
 
   }
 } else {

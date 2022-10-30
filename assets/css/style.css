@@ -112,9 +112,17 @@ a:hover{
 	font-size: 20px;
 	padding-top: 5%;
 	text-align: justify;
-	padding-left: 85px;
+	padding-left: 60px;
 	color: green;
 }
+#names-div{
+	display: flex;
+}
+#names-div i{
+	padding-right: 10px;
+	color: orange;
+}
+
 
 /*inner search bar*/
 #inner-search-div{
