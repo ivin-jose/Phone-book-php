@@ -132,13 +132,13 @@
 
 							<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 								<div class="toast-header">
-									<i class="fa-solid fa-trash disable_btn toast-logo"></i>
-									<strong class="me-auto toast-delete">User Deleted</strong>
-									<small>11 mins ago</small>
+									<i class="fa-regular fa-heart toast-logo"></i>
+									<strong class="me-auto toast-add">Phone Book</strong>
+									<small></small>
 									<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
 								</div>
 								<div class="toast-body">
-									<i class="fa-regular fa-user"></i>
+									Welcome to Phone book!
 								</div>
 							</div>
 						</div>

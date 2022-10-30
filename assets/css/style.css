@@ -179,6 +179,9 @@ a:hover{
 	object-fit: contain;
 	height: 15vh;
 }
+.storing-variables{
+	display: none;
+}
 
 /* FORM - user data inserting form*/
 

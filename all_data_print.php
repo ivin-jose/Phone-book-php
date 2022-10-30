@@ -17,11 +17,14 @@ if ($result->num_rows > 0) {
   // output data of each row
 	while($row = $result->fetch_assoc()) {
 
-		$datas .= '<div id="user-details-div" class="boxshadow">
+		$datas .= '
+    <input class = "storing-variables" id="user-id-store" type="text" value="'.$row["user_id"].'" >
+    <input class = "storing-variables" id="user-name-store" type="text" value="'.$row["user_name"].'" >
+		<div id="user-details-div" class="boxshadow">
 		<div id="user-details-heading-div">
 		<div id="user-details-logo-div">
 		<i id="open-book-logo" class="fa-solid fa-book-open-reader"></i>
-		<h2>'.$row["user_name"].'</h2>
+		<h2 id="user-name-store">'.$row["user_name"].'</h2>
 		</div>
 		<div id="user-details-display-div">
 		<b>Home:</b> '.$row["user_home"].'<br>

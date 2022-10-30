@@ -26,6 +26,20 @@ function all_data_printing() {
 }
 
 
+function delete_data() {
+	$.ajax({
+		type: 'POST',
+		url: './delete.php',
+		data: {user_id: user_id, user_name: user_name},
+        success: function(response) {
+            $("#toast-div").append(response);
+            names_printing();
+        }
+	})
+}
+
+
+
 function save_data() {
 	var name = $('#name').val();
 	var home = $('#home').val();
@@ -57,6 +71,14 @@ $("#name-display-div").on('click','.display_name', (e)=>{
 	user_id = e.target.getAttribute("u_id");
 	all_data_printing();
 
+});
+
+// deleting data
+
+$("#yes-button").click(function(){
+	user_id = $("#user-id-store").val();
+	user_name = $("#user-name-store").val();
+	delete_data();
 })
 
 // saving data
@@ -158,6 +180,7 @@ $("#yes-button").click(function(){
 })
 $("#no-button").click(function(){
 	$("#delete_confirmation_form").hide();
+	$("#complete_data").show();
 	document.querySelector('#update_user_btn').disabled = false;
 	document.querySelector('#add_user_btn').disabled = false;
 	document.querySelector('.display_name').disabled = false;

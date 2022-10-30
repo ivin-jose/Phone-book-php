@@ -12,8 +12,6 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-  // $sql_saving = "INSERT INTO users(user_name, user_home, user_phone, user_email) VALUES ('". $_REQUEST['name']."','". $_REQUEST['home']."','". $_REQUEST['phone']."', '" .$_REQUEST['email']."')";
-
    $sql_saving =   "INSERT INTO `users` (`user_name`, `user_home`, `user_phone`, `user_email`) VALUES ('". $_REQUEST['name']."', '". $_REQUEST['home']."', '". $_REQUEST['phone']."', '" .$_REQUEST['email']."')";
 
     $result = $conn->query($sql_saving);
