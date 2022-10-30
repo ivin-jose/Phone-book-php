@@ -130,7 +130,7 @@
 
 					<div id="toast-div">
 
-					<!-- 	<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+						<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 							<div class="toast-header">
 								<i class="fa-solid fa-trash disable_btn toast-logo"></i>
 								<strong class="me-auto toast-delete">User Deleted</strong>
@@ -140,7 +140,7 @@
 							<div class="toast-body">
 								'ivin jose' Deleted
 							</div>
-						</div> -->
+						</div>
 					</div>
 
 					

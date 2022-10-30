@@ -37,7 +37,7 @@ function save_data() {
 		url: './save_data.php',
 		data: {name: name, home: home, phone: phone, email: email},
 		success: function(response) {
-			$("#toast-div").html(response);
+			$("#toast-div").append(response);
 			names_printing(); 
 		}
 	})      
