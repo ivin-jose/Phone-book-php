@@ -34,7 +34,7 @@
 					</div>
 					<div id="home-button-div">
 						<a class="button btn-outline-primary home-btn" href="./inner_page.php">Show more</a>
-						<a class="button btn-outline-primary home-btn">Search</a>
+						<a id = "home-search-btn" class="button btn-outline-primary home-btn">Search</a>
 					</div>
 				</div>
 				<div id="earth-div" class="col-md-6">
@@ -50,3 +50,5 @@
 
 </body>
 </html>
+
+<script type="text/javascript" src="./assets/js/main.js"></script>

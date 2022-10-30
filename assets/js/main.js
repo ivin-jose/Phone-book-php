@@ -27,6 +27,9 @@ function all_data_printing() {
 
 
 function delete_data() {
+	user_id = $("#user-id-store").val();
+	user_name = $("#user-name-store").val();
+
 	$.ajax({
 		type: 'POST',
 		url: './delete.php',
@@ -57,6 +60,19 @@ function save_data() {
 	})      
 }
 
+
+function search_name(search) {
+	alert(search+"f()")
+	$.ajax({
+        type: 'POST',
+        url: './search.php',
+        data: {search: search},
+        success: function(response) {
+        	$("#name-display-div").html(response) 
+        }
+	})
+}
+
 names_printing();
 
 // full detail of user 
@@ -76,10 +92,20 @@ $("#name-display-div").on('click','.display_name', (e)=>{
 // deleting data
 
 $("#yes-button").click(function(){
-	user_id = $("#user-id-store").val();
-	user_name = $("#user-name-store").val();
 	delete_data();
-})
+});
+
+// searching datas
+
+$("#inner-search-btn").click(function() {
+	searchs = $("#inner-search-bar").val();
+	search_name(searchs);
+});
+$("#home-search-btn").click(function(){
+	alert("btn")
+	search_value = $("#home-search-bar").val();
+	search_name(search_value);
+});
 
 // saving data
 
@@ -184,4 +210,13 @@ $("#no-button").click(function(){
 	document.querySelector('#update_user_btn').disabled = false;
 	document.querySelector('#add_user_btn').disabled = false;
 	document.querySelector('.display_name').disabled = false;
+})
+
+
+$("#user-details-display-div").on('click','#close', (e)=>{
+	alert("close the file success");
+})
+
+$("#inner-middle-div").click(function() {
+	//names_printing();
 })
