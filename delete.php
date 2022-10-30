@@ -24,7 +24,7 @@ $time = date('h:i A');
 $notification = '<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 <div class="toast-header">
 <i class="fa-solid fa-trash disable_btn toast-logo"></i> 
-<strong class="me-auto toast-delete"> User Added</strong>
+<strong class="me-auto toast-delete"> User Deleted</strong>
 <small>'.$time.'</small>
 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
 </div>
