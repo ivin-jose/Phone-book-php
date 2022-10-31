@@ -62,7 +62,6 @@ function save_data() {
 
 
 function search_name(search) {
-	alert(search+"f()")
 	$.ajax({
         type: 'POST',
         url: './search.php',
@@ -71,6 +70,35 @@ function search_name(search) {
         	$("#name-display-div").html(response) 
         }
 	})
+}
+
+function upate_data_filling_form() {
+	$.ajax({
+	    type: 'POST',
+        url: './update_filling_form.php',
+        data: {user_id: user_id},
+        success: function(response) {
+        	$("#form-div").html(response);
+        }
+	})
+}
+
+function upate_data() {
+	var user_id = $("#user-id-store").val();
+	var name =  $("#update_name").val();
+	var home = $("#update_home").val();
+	var phone = $("#update_phone").val();
+	var email = $("#update_email").val();
+
+    $.ajax({
+    	type: 'POST',
+        url: './update.php',
+        data: {user_id: user_id, name:name, home: home, phone:phone, email: email},
+        success: function(response) {
+        	$("#toast-div").append(response);
+            names_printing();
+        }
+    })
 }
 
 names_printing();
@@ -102,9 +130,23 @@ $("#inner-search-btn").click(function() {
 	search_name(searchs);
 });
 $("#home-search-btn").click(function(){
-	alert("btn")
 	search_value = $("#home-search-bar").val();
 	search_name(search_value);
+});
+
+// UPDATE
+
+// form filling
+
+$("#update_user_btn").click(function() {
+	$("#update_form").show();
+	upate_data_filling_form();
+})
+
+// updating data
+
+$("#update_btn").click(function() {
+	upate_data();
 });
 
 // saving data
