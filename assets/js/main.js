@@ -78,7 +78,7 @@ function upate_data_filling_form() {
         url: './update_filling_form.php',
         data: {user_id: user_id},
         success: function(response) {
-        	$("#form-div").html(response);
+        	$("#update_form2").html(response);
         }
 	})
 }
@@ -139,13 +139,16 @@ $("#home-search-btn").click(function(){
 // form filling
 
 $("#update_user_btn").click(function() {
-	$("#update_form").show();
+	$("#update_form2").show();
 	upate_data_filling_form();
 })
 
 // updating data
 
-$("#update_btn").click(function() {
+
+$('#update_form').on('click','#update_btn',(e)=>{
+	alert("user updated")
+	new_id = $('#edit_id').val();
 	upate_data();
 });
 

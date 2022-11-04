@@ -75,6 +75,9 @@
 										<input type="email" name="" id="email" class="form-control input-box" placeholder="Email" required>
 										<input type="submit" name="" value="Save" class="button form-button btn-outline-primary home-btn" id="save_btn">
 									</div>
+									<div id="update_form2" class="boxshadow">
+										
+									</div>
 
 									
 
