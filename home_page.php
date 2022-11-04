@@ -33,8 +33,8 @@
 						<input id="home-search-bar" type="search" class="form-control" placeholder="SEARCH NAME.......">
 					</div>
 					<div id="home-button-div">
-						<a class="button btn-outline-primary home-btn" href="./inner_page.php">Show more</a>
-						<a id = "home-search-btn" class="button btn-outline-primary home-btn">Search</a>
+						<a id="aa" class="button btn-outline-primary home-btn" href="./inner_page.php">Show more</a>
+						<a id = "home-search-btn" class="button btn-outline-primary home-btn" >Search</a>
 					</div>
 				</div>
 				<div id="earth-div" class="col-md-6">

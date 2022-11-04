@@ -130,9 +130,17 @@ $("#inner-search-btn").click(function() {
 	search_name(searchs);
 });
 $("#home-search-btn").click(function(){
+	alert("dd")
 	search_value = $("#home-search-bar").val();
 	search_name(search_value);
 });
+
+$("#home-search-btn").click(function(){
+    console.log("Ff");
+    alert("ddl");
+});
+
+
 
 // UPDATE
 
