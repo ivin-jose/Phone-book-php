@@ -72,6 +72,17 @@ function search_name(search) {
 	})
 }
 
+function search_user_displaying(search) {
+	$.ajax({
+		type: 'POST',
+		url: './search_user_displaying.php',
+		data: {search: search},
+		success: function(response) {
+			$("#complete_data").html(response) 
+		}
+	})
+}
+
 function upate_data_filling_form() {
 	$.ajax({
 	    type: 'POST',
@@ -128,7 +139,9 @@ $("#yes-button").click(function(){
 $("#inner-search-btn").click(function() {
 	searchs = $("#inner-search-bar").val();
 	search_name(searchs);
+	search_user_displaying(searchs);
 });
+
 $("#home-search-btn").click(function(){
 	alert("dd")
 	search_value = $("#home-search-bar").val();
@@ -268,8 +281,4 @@ $("#no-button").click(function(){
 
 $("#user-details-display-div").on('click','#close', (e)=>{
 	alert("close the file success");
-})
-
-$("#inner-middle-div").click(function() {
-	//names_printing();
-})
+});
