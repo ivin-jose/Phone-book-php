@@ -143,9 +143,8 @@ $("#inner-search-btn").click(function() {
 });
 
 $("#home-search-btn").click(function(){
-	alert("dd")
-	search_value = $("#home-search-bar").val();
-	search_name(search_value);
+	alert("something")
+
 });
 
 $("#home-search-btn").click(function(){
@@ -160,16 +159,13 @@ $("#home-search-btn").click(function(){
 // form filling
 
 $("#update_user_btn").click(function() {
-	$("#update_form2").show();
 	upate_data_filling_form();
 })
 
 // updating data
 
 
-$('#update_form').on('click','#update_btn',(e)=>{
-	alert("user updated")
-	new_id = $('#edit_id').val();
+$('#form-div').on('click','#update_btn',(e)=>{
 	upate_data();
 });
 

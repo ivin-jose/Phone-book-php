@@ -20,13 +20,17 @@ if (isset($result->num_rows) && $result->num_rows >0) {
 		$datas .= '<div id="update_form" class="boxshadow">
 		<h3>Update</h3>
 		<label id="name_label" class="label"></label>
-		<input type="text" value="'.$row["user_name"].'" id="update_name" class="form-control input-box" placeholder="Name" required>
+		<input type="text" value="'.$row["user_name"].'" id="update_name" class="form-control input-box" placeholder="Name"
+		required>
 		<label id="home_label" class="label"></label>
-		<input type="text" value="'.$row["user_home"].'" id="update_home" class="form-control input-box" placeholder="Home town" required>
+		<input type="text" value="'.$row["user_home"].'" id="update_home" class="form-control input-box" placeholder="Home
+		town" required>
 		<label id="phone_label" class="label"></label>
-		<input type="text" value="'.$row["user_phone"].'" id="update_phone" class="form-control input-box" placeholder="Phone" required>
+		<input type="text" value="'.$row["user_phone"].'" id="update_phone" class="form-control input-box" 
+	  placeholder="Phone" required>
 		<label id="email_label" class="label"></label>
-		<input type="email" value="'.$row["user_email"].'" id="update_email" class="form-control input-box" placeholder="Email" required>
+		<input type="email" value="'.$row["user_email"].'" id="update_email" class="form-control input-box"
+    placeholder="Email" required>
 		<input type="submit" name="" value="Update" class="button form-button btn-outline-primary home-btn" id="update_btn">
 		</div>';
 
