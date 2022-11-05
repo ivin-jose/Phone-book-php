@@ -18,8 +18,8 @@ if ($result->num_rows > 0) {
 	while($row = $result->fetch_assoc()) {
 
 		$datas .= '
-    <input class = "storing-variables" id="user-id-store" type="text" value="'.$row["user_id"].'" >
-    <input class = "storing-variables" id="user-name-store" type="text" value="'.$row["user_name"].'" >
+		<input class = "storing-variables" id="user-id-store" type="text" value="'.$row["user_id"].'" >
+		<input class = "storing-variables" id="user-name-store" type="text" value="'.$row["user_name"].'" >
 		<div id="user-details-div" class="boxshadow">
 		<div id="user-details-heading-div">
 		<div id="user-details-logo-div">
