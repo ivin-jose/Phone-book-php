@@ -84,6 +84,7 @@ function search_user_displaying(search) {
 }
 
 function upate_data_filling_form() {
+	var user_id = $("#user-id-store").val();
 	$.ajax({
 	    type: 'POST',
         url: './update_filling_form.php',
@@ -137,6 +138,13 @@ $("#yes-button").click(function(){
 // searching datas
 
 $("#inner-search-btn").click(function() {
+	document.querySelector('#update_user_btn').disabled = false;
+	document.querySelector('#delete_user_btn').disabled = false;
+	$("#complete_data").show();
+	$("#save_form").hide();
+	$("#update_form").hide();
+	$("#delete_confirmation_form").hide();
+
 	searchs = $("#inner-search-bar").val();
 	search_name(searchs);
 	search_user_displaying(searchs);
@@ -159,6 +167,8 @@ $("#home-search-btn").click(function(){
 // form filling
 
 $("#update_user_btn").click(function() {
+	var user_id = $("#user-id-store").val();
+	alert("updt");
 	upate_data_filling_form();
 })
 
@@ -166,6 +176,7 @@ $("#update_user_btn").click(function() {
 
 
 $('#form-div').on('click','#update_btn',(e)=>{
+	$("#update_form").hide();
 	upate_data();
 });
 
