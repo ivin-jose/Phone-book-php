@@ -99,6 +99,9 @@ a:hover{
 	width: 23%;
 	overflow-y: scroll;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 #inner-middle-div{
 	width: 50%;
@@ -110,9 +113,7 @@ a:hover{
 }
 #name-display-div{
 	font-size: 20px;
-	padding-top: 5%;
 	text-align: justify;
-	padding-left: 60px;
 	color: green;
 }
 #names-div{
@@ -226,7 +227,7 @@ a:hover{
 #inner-third-div{
 	width: 27%;
 	background: white;
-	padding-top: 10px;
+	margin-top: 10px;
 	display: flex;
 }
 .third-btns{
@@ -263,4 +264,29 @@ a:hover{
 	color: red;
 }
 
+@media screen and (max-width: 500px){
+	#inner-first-div{
+		width: 100%;
+		height: 50vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#inner-middle-div{
+		width: 100%;
+	}
+	#inner-search-div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#inner-third-div{
+		    width: 100%;
+    display: flex; 
+    justify-content: center;
+	}
+	#inner-search-btn-div{
+		margin-left: 10%;
+	}
+}
 

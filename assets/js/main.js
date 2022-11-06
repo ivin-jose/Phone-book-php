@@ -32,10 +32,10 @@ function delete_data() {
 		type: 'POST',
 		url: './delete.php',
 		data: {user_id: user_id, user_name: user_name},
-        success: function(response) {
-            $("#toast-div").append(response);
-            names_printing();
-        }
+		success: function(response) {
+			$("#toast-div").append(response);
+			names_printing();
+		}
 	})
 }
 
@@ -61,12 +61,12 @@ function save_data() {
 
 function search_name(search) {
 	$.ajax({
-        type: 'POST',
-        url: './search.php',
-        data: {search: search},
-        success: function(response) {
-        	$("#name-display-div").html(response) 
-        }
+		type: 'POST',
+		url: './search.php',
+		data: {search: search},
+		success: function(response) {
+			$("#name-display-div").html(response) 
+		}
 	})
 }
 
@@ -84,12 +84,12 @@ function search_user_displaying(search) {
 function upate_data_filling_form() {
 	var user_id = $("#user-id-store").val();
 	$.ajax({
-	    type: 'POST',
-        url: './update_filling_form.php',
-        data: {user_id: user_id},
-        success: function(response) {
-        	$("#update_form2").html(response);
-        }
+		type: 'POST',
+		url: './update_filling_form.php',
+		data: {user_id: user_id},
+		success: function(response) {
+			$("#update_form2").html(response);
+		}
 	})
 }
 
@@ -100,15 +100,15 @@ function upate_data() {
 	var phone = $("#update_phone").val();
 	var email = $("#update_email").val();
 
-    $.ajax({
-    	type: 'POST',
-        url: './update.php',
-        data: {user_id: user_id, name:name, home: home, phone:phone, email: email},
-        success: function(response) {
-        	$("#toast-div").append(response);
-            names_printing();
-        }
-    })
+	$.ajax({
+		type: 'POST',
+		url: './update.php',
+		data: {user_id: user_id, name:name, home: home, phone:phone, email: email},
+		success: function(response) {
+			$("#toast-div").append(response);
+			names_printing();
+		}
+	})
 }
 
 names_printing();
@@ -151,7 +151,7 @@ $("#inner-search-btn").click(function() {
 $("#home-search-btn").click(function(){
 	var home_search_value = $("#home-search-bar").val();
 	search_name(home_search_value);
-	search_user_displaying(home_search_value);
+	search_user_displaying(home_search_value); 
 });
 
 
