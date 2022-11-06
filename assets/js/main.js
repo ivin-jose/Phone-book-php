@@ -1,6 +1,4 @@
-// Disabling update button
-document.querySelector('#update_user_btn').disabled = true;
-document.querySelector('#delete_user_btn').disabled = true;
+
 
 function names_printing() {
 	$.ajax({
@@ -151,14 +149,11 @@ $("#inner-search-btn").click(function() {
 });
 
 $("#home-search-btn").click(function(){
-	alert("something")
-
+	var home_search_value = $("#home-search-bar").val();
+	search_name(home_search_value);
+	search_user_displaying(home_search_value);
 });
 
-$("#home-search-btn").click(function(){
-    console.log("Ff");
-    alert("ddl");
-});
 
 
 
@@ -168,7 +163,6 @@ $("#home-search-btn").click(function(){
 
 $("#update_user_btn").click(function() {
 	var user_id = $("#user-id-store").val();
-	alert("updt");
 	upate_data_filling_form();
 })
 
@@ -289,3 +283,7 @@ $("#no-button").click(function(){
 $("#user-details-display-div").on('click','#close', (e)=>{
 	alert("close the file success");
 });
+
+// Disabling update button
+document.querySelector('#update_user_btn').disabled = true;
+document.querySelector('#delete_user_btn').disabled = true;

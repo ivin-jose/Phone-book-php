@@ -117,7 +117,7 @@
 							<button class="button form-button btn-outline-primary home-btn third-btns" id="delete_user_btn"><i class="fa-solid fa-trash disable_btn"></i></button>
 						</div>
 						<div>
-							<button class="button form-button btn-outline-primary home-btn third-btns" id="inner_home_btn"><i class="fa-regular fa-pen-to-square disable_btn"></i></button>
+							<button class="button form-button btn-outline-primary home-btn third-btns" id="inner_home_btn"><i class="fa-solid fa-house"></i></button>
 						</div>
 
 						<div id="toast-div">
